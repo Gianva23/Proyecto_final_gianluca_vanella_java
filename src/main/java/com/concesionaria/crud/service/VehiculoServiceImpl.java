@@ -44,4 +44,14 @@ public class VehiculoServiceImpl implements VehiculoService {
     public void eliminarVehiculo(Long id) {
         vehiculoRepository.deleteById(id);
     }
+
+    @Override
+    public List<Vehiculo> buscarPorModelo(String modelo) {
+        return vehiculoRepository.findByModeloContainingIgnoreCase(modelo);
+    }
+
+    @Override
+    public List<Vehiculo> buscarPorAño(Integer anio) {
+        return vehiculoRepository.findByAño(anio);
+    }
 }

@@ -12,4 +12,6 @@ public interface VehiculoService {
     Vehiculo guardarVehiculo(Vehiculo vehiculo);
     Vehiculo actualizarVehiculo(Long id, Vehiculo vehiculo);
     void eliminarVehiculo(Long id);
+    List<Vehiculo> buscarPorModelo(String modelo);
+    List<Vehiculo> buscarPorAño(Integer anio);
 }

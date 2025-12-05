@@ -54,4 +54,14 @@ public class VehiculoController {
         vehiculoService.eliminarVehiculo(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/buscar/modelo")
+    public List<Vehiculo> buscarPorModelo(@RequestParam String valor) {
+        return vehiculoService.buscarPorModelo(valor);
+    }
+
+    @GetMapping("/buscar/año")
+    public List<Vehiculo> buscarPorAño(@RequestParam Integer valor) {
+        return vehiculoService.buscarPorAño(valor);
+    }
 }
