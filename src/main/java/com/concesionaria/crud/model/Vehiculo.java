@@ -3,7 +3,7 @@ package com.concesionaria.crud.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "vehiculos")  // Nombre exacto de tu tabla en MySQL
+@Table(name = "vehiculos")
 public class Vehiculo {
 
     @Id

@@ -26,7 +26,7 @@ public interface VehiculoRepository extends JpaRepository<Vehiculo, Long> {
     // ===============================================
     // 🛠️ MÉTODOS PERSONALIZADOS (se generan por nombre)
     List<Vehiculo> findByModeloContainingIgnoreCase(String modelo);
-    List<Vehiculo> findByAño(Integer anio);
+    List<Vehiculo> findByAño(Integer año);
     // ===============================================
 }
 

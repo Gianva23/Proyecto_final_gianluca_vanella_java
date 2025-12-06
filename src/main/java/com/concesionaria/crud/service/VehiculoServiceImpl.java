@@ -51,7 +51,7 @@ public class VehiculoServiceImpl implements VehiculoService {
     }
 
     @Override
-    public List<Vehiculo> buscarPorAño(Integer anio) {
-        return vehiculoRepository.findByAño(anio);
+    public List<Vehiculo> buscarPorAño(Integer año) {
+        return vehiculoRepository.findByAño(año);
     }
 }
